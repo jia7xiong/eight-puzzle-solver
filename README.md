@@ -5,7 +5,9 @@
 The Eight-Puzzle-Solver is a command line program based on A* algorithm. It can solve any customized 8-puzzle and show you a step-by-step trace. Also it allows you to modify macro to easily get a N-puzzle-solver.
 
 ## Background
-<center><img src="8-puzzle-example.jpg" width="200"/></center>
+<p align="center">
+<img src="8-puzzle-example.jpg" width="200"/>
+<p>
 
 It not always that easy to solve 8-puzzle manually. When it comes to create an intelligent program, however, the average solution cost for a randomly generated 8-puzzle instance is about 22 steps and the branching factor is about 3. (When the empty tile is in the middle, four moves are possible; when it is in a corner, two; and when it is along an edge, three.) This means if we use an exhaustive tree search, to depth 22 would look at about 3<sup>22</sup> ≈ 3.1 × 10<sup>10</sup> states! Thus, rethinking better algorithms, I explored the perfromance of Uniform Cost Search, the Misplaced Tile and Manhattan Distance heuristics applied to A* algorithm. Read my [report](report.pdf) for details.
  
