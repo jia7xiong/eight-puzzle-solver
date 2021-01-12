@@ -18,7 +18,7 @@ This project is tested on MacOS and Windows, but should likely work on any platf
 ### For Unix based OS
 
 ```sh
-$ git clone https://github.com/xiongjia000777/eight-puzzle-solver.git
+$ git clone https://github.com/jia7xiong/eight-puzzle-solver.git
 $ cd eight-puzzle-solver
 $ make
 ```
@@ -26,17 +26,17 @@ $ make
 
 You need change the TARGET in [Makefile](Makefile) before $ make.
 
- ## Usage
+## Usage
 ### Run
  ```sh
  $ ./eight_puzzle_solver.out 
  ```
  Then follow the instructions on the screen to enjoy the game.
- (If you encounter "segmentation fault", check the "#define L" in [constant.h](include/contant.h).)
+ (If you encounter "segmentation fault", check the "#define L" in [constant.h](./include/constant.h).)
 
 ### Get rid of object and executable files
 ```sh
 $ make clean
 ```
 ### Way to N-puzzle
-Change the "#define N" in [constant.h](include/contant.h). Then modify the [main.cpp](src/main.cpp) to your style by following the comments.
+Change the "#define N" in [constant.h](./include/constant.h). Then modify the [main.cpp](./src/main.cpp) to your style by following the comments.
